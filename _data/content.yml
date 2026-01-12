@@ -1,0 +1,135 @@
+# ============================================
+# EDYTUJ TEN PLIK ABY ZMIENIAC TRESC STRONY
+# ============================================
+
+# Nazwa studia
+nazwa_studia: "Studio Fotograficzne Kadr"
+logo_ikona: "W"
+logo_tekst: "Studio"
+logo_highlight: "Kadr"
+
+# ============================================
+# MENU NAWIGACJI
+# ============================================
+menu:
+  - tekst: "Strona Glowna"
+    link: "#home"
+  - tekst: "O nas"
+    link: "#about"
+  - tekst: "Oferta"
+    link: "#offer"
+  - tekst: "Portfolio"
+    link: "#portfolio"
+  - tekst: "Blog"
+    link: "#blog"
+  - tekst: "Kontakt"
+    link: "#contact"
+
+przycisk_kontakt: "szybki kontakt"
+
+# ============================================
+# SEKCJA HERO (GLOWNA)
+# ============================================
+hero:
+  tytul: "Studio Fotograficzne"
+  obraz: "https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=600&h=400&fit=crop"
+  obraz_alt: "Studio fotograficzne"
+
+  o_nas_tytul: "O nas"
+  o_nas_tekst: "Lorem ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym."
+
+  dekoracja_obraz: "https://images.unsplash.com/photo-1579762715118-a6f1d4b934f1?w=400&h=300&fit=crop"
+  dekoracja_alt: "Dekoracja"
+
+# ============================================
+# SEKCJA STUDIO
+# ============================================
+studio:
+  tytul: "Studio fotograficzne Kadr"
+  tekst: "Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker."
+
+# ============================================
+# SEKCJA OFERTA
+# ============================================
+oferta:
+  tytul: "Zapoznaj się z naszą ofertą"
+  tekst_1: "Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu."
+  tekst_2: "Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki."
+
+  karty:
+    - tytul: "Sesje rodzinne"
+      obraz: "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=400&h=500&fit=crop"
+    - tytul: "Sesje produktowe"
+      obraz: "https://images.unsplash.com/photo-1525385133512-2f3bdd039054?w=400&h=500&fit=crop"
+
+# ============================================
+# SEKCJA STATYSTYKI
+# ============================================
+statystyki:
+  tytul: "Trochę liczb"
+  dane:
+    - liczba: "500+"
+      opis: "Zadowolonych klientów"
+    - liczba: "1200+"
+      opis: "Wykonanych sesji"
+    - liczba: "15"
+      opis: "Lat doświadczenia"
+    - liczba: "50+"
+      opis: "Nagród i wyróżnień"
+
+# ============================================
+# SEKCJA PORTFOLIO
+# ============================================
+portfolio:
+  tytul: "Portfolio"
+  zdjecia:
+    - url: "https://images.unsplash.com/photo-1519741497674-611481863552?w=400&h=400&fit=crop"
+      alt: "Portfolio 1"
+    - url: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=400&h=400&fit=crop"
+      alt: "Portfolio 2"
+    - url: "https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=400&h=400&fit=crop"
+      alt: "Portfolio 3"
+    - url: "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=400&h=400&fit=crop"
+      alt: "Portfolio 4"
+    - url: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=400&h=400&fit=crop"
+      alt: "Portfolio 5"
+    - url: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop"
+      alt: "Portfolio 6"
+
+# ============================================
+# SEKCJA KONTAKT
+# ============================================
+kontakt:
+  tytul: "Kontakt"
+
+  email:
+    tytul: "Email"
+    adres: "kontakt@studiokadr.pl"
+
+  telefon:
+    tytul: "Telefon"
+    numer: "+48 123 456 789"
+
+  adres:
+    tytul: "Adres"
+    linia_1: "ul. Fotograficzna 15"
+    linia_2: "00-001 Warszawa"
+
+  godziny:
+    tytul: "Godziny otwarcia"
+    linia_1: "Pon-Pt: 9:00 - 18:00"
+    linia_2: "Sob: 10:00 - 14:00"
+
+  social:
+    - nazwa: "Facebook"
+      link: "#"
+    - nazwa: "Instagram"
+      link: "#"
+    - nazwa: "Pinterest"
+      link: "#"
+
+# ============================================
+# STOPKA
+# ============================================
+stopka:
+  copyright: "2026 Studio Fotograficzne Kadr. Wszelkie prawa zastrzeżone."

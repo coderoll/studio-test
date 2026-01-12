@@ -1,0 +1,11 @@
+# Konfiguracja Jekyll dla GitHub Pages
+title: Studio Fotograficzne Kadr
+description: Profesjonalne studio fotograficzne
+lang: pl
+
+# GitHub Pages
+baseurl: ""
+url: ""
+
+# Ustawienia budowania
+markdown: kramdown

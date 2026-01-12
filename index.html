@@ -1,0 +1,159 @@
+---
+---
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.data.content.nazwa_studia }}</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">{{ site.data.content.logo_ikona }}</span>
+                <span class="logo-text">{{ site.data.content.logo_tekst }}<span class="logo-highlight">{{ site.data.content.logo_highlight }}</span></span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    {% for item in site.data.content.menu %}
+                    <li><a href="{{ item.link }}">{{ item.tekst }}</a></li>
+                    {% endfor %}
+                </ul>
+            </nav>
+            <a href="#contact" class="btn btn-primary">{{ site.data.content.przycisk_kontakt }}</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-left">
+                <h1>{{ site.data.content.hero.tytul }}</h1>
+                <div class="hero-image">
+                    <img src="{{ site.data.content.hero.obraz }}" alt="{{ site.data.content.hero.obraz_alt }}">
+                </div>
+            </div>
+            <div class="hero-right">
+                <h2>{{ site.data.content.hero.o_nas_tytul }}</h2>
+                <div class="underline"></div>
+                <p>{{ site.data.content.hero.o_nas_tekst }}</p>
+            </div>
+        </div>
+        <div class="hero-decoration">
+            <img src="{{ site.data.content.hero.dekoracja_obraz }}" alt="{{ site.data.content.hero.dekoracja_alt }}">
+        </div>
+    </section>
+
+    <!-- Studio Section -->
+    <section class="studio-section">
+        <div class="container">
+            <h2>{{ site.data.content.studio.tytul }}</h2>
+            <p>{{ site.data.content.studio.tekst }}</p>
+            <a href="#contact" class="btn btn-outline">{{ site.data.content.przycisk_kontakt }}</a>
+        </div>
+    </section>
+
+    <!-- Offer Section -->
+    <section id="offer" class="offer-section">
+        <div class="container">
+            <div class="offer-content">
+                <div class="offer-text">
+                    <h2>{{ site.data.content.oferta.tytul }}</h2>
+                    <p>{{ site.data.content.oferta.tekst_1 }}</p>
+                    <p>{{ site.data.content.oferta.tekst_2 }}</p>
+                </div>
+                <div class="offer-cards">
+                    {% for karta in site.data.content.oferta.karty %}
+                    <div class="offer-card">
+                        <img src="{{ karta.obraz }}" alt="{{ karta.tytul }}">
+                        <h3>{{ karta.tytul }}</h3>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <h2>{{ site.data.content.statystyki.tytul }}</h2>
+            <div class="stats-grid">
+                {% for stat in site.data.content.statystyki.dane %}
+                <div class="stat-item">
+                    <span class="stat-number">{{ stat.liczba }}</span>
+                    <span class="stat-label">{{ stat.opis }}</span>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2>{{ site.data.content.portfolio.tytul }}</h2>
+            <div class="underline center"></div>
+            <div class="portfolio-grid">
+                {% for zdjecie in site.data.content.portfolio.zdjecia %}
+                <div class="portfolio-item">
+                    <img src="{{ zdjecie.url }}" alt="{{ zdjecie.alt }}">
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>{{ site.data.content.kontakt.tytul }}</h2>
+            <div class="underline center"></div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">&#9993;</div>
+                    <h3>{{ site.data.content.kontakt.email.tytul }}</h3>
+                    <p><a href="mailto:{{ site.data.content.kontakt.email.adres }}">{{ site.data.content.kontakt.email.adres }}</a></p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">&#9742;</div>
+                    <h3>{{ site.data.content.kontakt.telefon.tytul }}</h3>
+                    <p><a href="tel:{{ site.data.content.kontakt.telefon.numer | remove: ' ' }}">{{ site.data.content.kontakt.telefon.numer }}</a></p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">&#9906;</div>
+                    <h3>{{ site.data.content.kontakt.adres.tytul }}</h3>
+                    <p>{{ site.data.content.kontakt.adres.linia_1 }}<br>{{ site.data.content.kontakt.adres.linia_2 }}</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">&#9200;</div>
+                    <h3>{{ site.data.content.kontakt.godziny.tytul }}</h3>
+                    <p>{{ site.data.content.kontakt.godziny.linia_1 }}<br>{{ site.data.content.kontakt.godziny.linia_2 }}</p>
+                </div>
+            </div>
+            <div class="social-links">
+                {% for social in site.data.content.kontakt.social %}
+                <a href="{{ social.link }}" class="social-link">{{ social.nazwa }}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">{{ site.data.content.logo_ikona }}</span>
+                    <span class="logo-text">{{ site.data.content.logo_tekst }}<span class="logo-highlight">{{ site.data.content.logo_highlight }}</span></span>
+                </div>
+                <p>&copy; {{ site.data.content.stopka.copyright }}</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
